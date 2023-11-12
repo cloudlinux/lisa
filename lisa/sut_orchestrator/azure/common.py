@@ -2001,7 +2001,14 @@ def check_or_create_gallery_image(
                     "offer": gallery_image_offer,
                     "sku": gallery_image_sku,
                 },
+                "features": [
+                    {
+                        "name": "DiskControllerTypes",
+                        "value": "SCSI,NVMe",
+                    },
+                ],
             }
+
             if gallery_image_securitytype:
                 image_post_body["features"] = [
                     {
